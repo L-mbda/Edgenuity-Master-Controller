@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Edgenuity Master Controller v0.5
-// @namespace    http://monks.net/
+// @namespace    https://github.com/De-y/Edgenuity-Master-Controller/
 // @version      0.4
 // @description  Edgenuity is killing us. So someone made an automatic next clicker, which was given major improvements by Hmelck and further improved by other members of the community subreddit. It was then update to 0.4, and moved on Github by XANADryden, with version 0.5 being moved onto another GitHub Repository by de-y. 0.5 is currently the best version to use for the Master Controller. VIVA LA RESISTANCE.
 // @author        de-y on github or /u/_avdf on reddit, with other contributions from SubatomicMC, and with contributions to this project from: /u/Mrynot88 , /u/Turtlemower, and Hemlck and XANADryden
