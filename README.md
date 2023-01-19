@@ -1,7 +1,7 @@
 # Edgenuity-Master-Controller
 A user script to make Edgenuity more better for us students.  
 
-Most of the credit goes to [https://greasyfork.org/en/scripts/395567-edgenuity-master-controller-v0-3/code, I just uploaded it to github.](https://github.com/XANADryden/Edgenuity-Master-Controller) I just took their version and added a lot more features.
+Most of the credit goes to (https://github.com/XANADryden/Edgenuity-Master-Controller) I just took their version and added a lot more features.
 
 If you want to contribute, just make a pull request.
 
