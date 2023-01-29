@@ -13,7 +13,7 @@
 // If you want to look at more things like this, go to the subreddit at reddit.com/r/edgenuity.
 
 // Note from DF.
-// I just modified the v0.4 script to fit my need of speedrunning my entire language class backwards from the point of a locked assignment, that is only if I have a exam that requires a teacher to unlock. I also added the assignment unlocker by taking the code from SubatomicMC(sorry Subatomic). So yeah.
+// I just modified the v0.4 script to fit my need of speedrunning my entire language class backwards from the point of a locked assignment, that is only if I have a exam that requires a teacher to unlock. I also added the assignment unlocker by taking the code from SubatomicMC(sorry Subatomic). So yeah. I also added a skip tests & quizzes feature, as to ignore tests when you are working on edgenuity assignments.
 
 // ----- User Settings ----- //
 
@@ -52,6 +52,20 @@ var autodefi = true;
 // Bugs:
 //
 // Currently, there are no bugs reported!
+
+var skip_tests = false;
+// Default = false (Skips tests & quizzes).
+// Description: This will skips tests & quizzes
+// Modes:
+// To turn on skips, set to true,
+// To turn off skips, set to false,
+//
+// Warnings:
+//
+// I would recommend to turn off the back mode if you are done with a particular section and then reloading the script.
+// Bugs:
+//
+// Currently, there are no bugs.
 
 var prevent_inactive = true;
 // Default = true (If problems occur, try turning this off by replacing true with false)
@@ -124,19 +138,19 @@ variable current_page is unused as of right now because of a bug
         if(is_auto_clicking){
         pageload = setInterval(function() {
            if (auto_click_direction == "forward") {
-                current_page = document.getElementById("activity-title");
+                current_page = document.getElementById("activity-title").firstElementChild.innerHTML
                 nextactivity = document.getElementsByClassName("footnav goRight")[0];
                 nextactivity_disabled = document.getElementsByClassName("footnav goRight disabled")[0];
            }
            if (auto_click_direction == "back") {
-                current_page = document.getElementById("activity-title");
+                current_page = document.getElementById("activity-title").firstElementChild.innerHTML
                 nextactivity = document.getElementsByClassName("footnav goLeft")[0];
                 nextactivity_disabled = document.getElementsByClassName("footnav goLeft disabled")[0];
            }
             current_frame = document.getElementById("activity-status").firstChild.nodeValue;
            //console.log(current_frame == "Complete");
             // The following will check if the button isn't disabled or anything like that, and will check if the current assignment is complete.
-            if (nextactivity && !nextactivity_disabled && current_frame == "Complete") {
+            if (nextactivity && !nextactivity_disabled && current_frame == "Complete" || skip_tests == true && current_page.includes("Test:") == true || skip_tests == true && current_page.includes("(Practice)") == true || skip_tests == true && current_page.includes("Quiz:") == true) {
                 nextactivity.click();
                 clearInterval(pageload);
                 if (prevent_inactive) {
