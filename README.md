@@ -7,6 +7,6 @@ If you want to contribute, just make a pull request.
 
 ## Installation
 
-First, install Tampermonkey or another similar userscript extension.  Next, click on it in the extension list.  On Chrome you may need to press the puzzle piece first, and on Firefox you may need to press the double arrows.  Select Tampermonkey or your prefered extension, then choose Create new script.  Now clear everything out of the file that pops up, and paste in the contents of the Edgenuity_Master_Controllerv0.5.user.js file.  Now hit file>save, or press CTRL+S.  Make sure the script is enabled, and refresh edgenuity if it's already open.
+First, install Tampermonkey or another similar userscript extension.  Next, click on the edgenuity-master-controller user.js file, then click on raw, you will have the option & ability to install it. When you then go to edgenuity, make sure that it is set to on for both tampermonkey & the userscript. Thats it!
 
 `VIVA LA RESISTANCE`
