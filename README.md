@@ -1,3 +1,8 @@
+# UPDATE #
+
+I am no longer working on this project since I am done with edgenuity, if you want the maintained version, head over to https://github.com/diorisdash/assnuity and check both releases and main.
+
+
 # Edgenuity-Master-Controller
 A user script to make Edgenuity more better for us students.  
 
